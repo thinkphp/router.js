@@ -1,0 +1,81 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+   <title></title>
+   <style type="text/css">
+   body {
+      font-size:24px;
+      line-height:1.5;
+      color:#333;
+    }
+    div#index {
+      width:28em;
+      margin:0 auto;
+    }
+    h1,h2,h3,body { font-family:'gill sans','dejavu sans',verdana,sans-serif; }
+    tt,.aux,.man-ref,pre,h1 { font-family:menlo,'dejavu sans mono',monospace; }
+
+    h1 {
+      font-weight:bold;
+      font-size:80px;
+      letter-spacing:-5px;
+      color:#000;
+      margin-bottom:0;
+      position:relative;
+      left:-50px;
+    }
+   #container{margin-top: 20px}
+   </style>
+   <script src="http://www.google.com/jsapi?key=ABQIAAAA1XbMiDxx_BTCY2_FkPh06RRaGTYH6UMl8mADNa0YKuWNNa8VNxQEerTAUcfkyrr6OwBovxn7TDAH5Q"></script>
+   <script type="text/javascript">google.load("mootools", "1.4.1");</script>
+   <script type="text/javascript" src="router.js"></script>
+   <script type="text/javascript">
+   var log = function(msg,data) {
+       var msg = "<b>"+msg+"</b>";
+       var vars = [];
+       for (var i in data) {
+            vars.push(i + ": " + data[i] + "<br/>");
+       } 
+       $('container').set('html',msg + "<br/>"+ vars.join(""));
+   }
+   var rules = [
+               ["/:user/forge/:action/",
+               function(data) {       
+                     log("My Profile",data);
+               }],
+               ["/forge/:action/",
+               function(data) {
+                     log("Add a new Plugin",data);
+               }],
+               ["/:user/settings/:action/",
+               function(data) {
+                     log("Edit your profile",data);
+               }],
+               ["/logout/",
+               function(data) {
+                     log("Logout",data);
+               }]
+               ]; 
+
+   var router = new Router(rules);
+
+   window.onhashchange = function(url) {
+
+       router.match(location.hash.substring(2))
+   }
+   </script>
+</head>
+<body>
+<h2>Developer Menu</h2>
+<a href="#!/rasmus/forge/view/">View my plugins</a>
+<br/>
+<a href="#!/forge/add/">Add a new plugin</a>
+<br/>
+<a href="#!/rasmus/settings/edit/">Settings</a>
+<br/>
+<a href="#!/logout/">Logout</a>
+<div id="container"></div>
+</body>
+</html>
+

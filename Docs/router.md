@@ -30,7 +30,7 @@ Router Method: match(#Router: match)
 
 ### Returns:
 
-'Object' - an object containing key/value matching that is passed to the corresponding handler.
+'Object' - an object containing key/value matching that is passed to the corresponding handler defined in your rules.
 
 ### Example
 

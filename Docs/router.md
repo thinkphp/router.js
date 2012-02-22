@@ -23,9 +23,14 @@ Router Method: match(#Router: match)
 
     router.match(url);
 
+### Arguments:
+
+`String` url - document.hash - the anchor portion of a URL, including the hash sign(#).
+               the hash property is supported in all major browsers.
+
 ### Returns:
 
-*(*Object*) - an object containing key/value matching that is passed to the corresponding handler.
+'Object' - an object containing key/value matching that is passed to the corresponding handler.
 
 ### Example
 

@@ -10,7 +10,7 @@ Router Method: constructor (#Router: constructor)
 
 ### Arguments:
 
-*(*Array*) rules - the rules for matching 
+`Array` rules - the rules for matching 
   
 ### Returns
 

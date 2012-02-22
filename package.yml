@@ -1,7 +1,7 @@
-name: 
+name: mooRouter
 author: thinkphp
 current: v1.0
-category: 
-tags: []
+category: Utilities
+tags: [hashchange, url, router, navigation, events, fragments]
 docs: 
 demo: 

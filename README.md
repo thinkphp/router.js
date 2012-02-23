@@ -18,7 +18,7 @@ Get started by creating a set of rules:
                }],
                ["/forge/:action/",
                function(data) {
-                     console.log("My Profile",data.action);
+                     console.log("Add a new plugin",data.action);
                }],
                ["/:user/settings/:action/",
                function(data) {

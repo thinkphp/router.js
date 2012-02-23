@@ -7,7 +7,7 @@ How to use
 ----------
 First at all, you must create a set of rules that represents the patterns for url matching.
 
-Get started by creating a set of rules
+Get started by creating a set of rules:
 
                var rules = [
                ["/:user/forge/:action/",
@@ -36,7 +36,7 @@ Create, simply, a new object `Router`.
                var router = new Router(rules);
 
 Be sure to call the method "match". This method iterates over the stored rules
-and if a match is found, the corresponding handler is called with a single argument, an object containing
+and if a match is found, the corresponding handler is fired with a single argument, an object containing
 properties matching the variable placeholders in the matching rule, otherwise returns undefined.
 
                window.onhashchange = function() {

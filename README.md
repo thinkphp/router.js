@@ -28,7 +28,7 @@ Get started by creating a set of rules:
                }]
                ]; 
 
-':key' acts as placeholders resulting in matching properties on the data object.
+`:key` acts as placeholders resulting in matching properties on the data object.
 
 
 Create, simply, a new object `Router`.

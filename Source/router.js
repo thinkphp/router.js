@@ -1,3 +1,20 @@
+/*
+---
+description: This plugin provides methods for routing client-side pages and connecting them to actions and events.
+
+authors:
+- Adrian Statescu (http://thinkphp.ro)
+
+license:
+- MIT-style license
+
+requires:
+ core/1.4.4: '*'
+
+provides: Router
+...
+*/
+
 var Router = new Class({
 
     _compiled: [],

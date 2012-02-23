@@ -3,5 +3,5 @@ author: thinkphp
 current: v1.0
 category: Utilities
 tags: [hashchange, url, router, navigation, events, fragments]
-docs: 
-demo: 
+docs: https://github.com/thinkphp/router.js/blob/master/Docs/router.md
+demo: http://thinkphp.github.com/router.js/

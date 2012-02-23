@@ -3,6 +3,8 @@ Router
 
 This plugin provides methods for routing client-side pages and connecting them to actions and events.
 
+![Screenshot](http://farm8.staticflickr.com/7179/6775343118_4a43f51b49.jpg)
+
 How to use
 ----------
 First at all, you must create a set of rules that represents the patterns for url matching.
